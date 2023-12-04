@@ -1,0 +1,12 @@
+body {
+  background-color: lightslategrey;
+}
+
+.thumb {
+  height: 450px;
+}
+
+.flag {
+  height: 30px;
+  width: 30px;
+}
