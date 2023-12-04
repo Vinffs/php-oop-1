@@ -13,9 +13,11 @@
         <div>
         </div>
       </div>
+      <?php foreach($genres as $genre) { ?>
       <div>
-        <?= $genre ?>
+        <?= $genre->name ?>
       </div>
+      <?php } ?>
     </div>
   </div>
 </div>

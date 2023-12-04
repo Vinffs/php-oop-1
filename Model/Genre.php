@@ -11,5 +11,10 @@ class Genre
   }
 }
 
-// $genreString = file_get_contents(__DIR__ . "/genre_db.json");
-// $genre = json_decode($genreString, true);
+
+$genreString = file_get_contents(__DIR__ . "/genre_db.json");
+$genresArray = json_decode($genreString, true);
+$genres = [];
+foreach ($genresArray as $item) {
+  $genres[] = new Genre($item);
+}
