@@ -1,3 +1,4 @@
+<!-- dynamic calls are from the construct of Movie.php -->
 <div class="col-12 col-md-4 col-lg-3">
   <div class="card">
     <img src="<?= $image ?>" class="card-img-top my-ratio" alt="<?= $title ?>">
@@ -13,10 +14,10 @@
         <div>
         </div>
       </div>
-      <?php foreach($genres as $genre) { ?>
-      <div>
-        <?= $genre->name ?>
-      </div>
+      <?php foreach ($genres as $genre) { ?>
+        <div>
+          <?= $genre->name ?>
+        </div>
       <?php } ?>
     </div>
   </div>
