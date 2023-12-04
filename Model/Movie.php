@@ -48,6 +48,7 @@ class Movie
     $content = substr($this->overview, 0, 100) . "...";
     $custom = $this->getVote();
     $genres = $this->genres;
+    $language = $this->original_language;
     include __DIR__ . "/../Views/card.php";
   }
 }

@@ -1,6 +1,6 @@
 <!-- dynamic calls are from the construct of Movie.php -->
 <div class="col-12 col-md-4 col-lg-3">
-  <div class="card">
+  <div class="card h-100">
     <img src="<?= $image ?>" class="card-img-top my-ratio" alt="<?= $title ?>">
     <div class="card-body">
       <h5 class="card-title">
@@ -10,7 +10,10 @@
         <?= $content ?>
       </p>
       <div class="d-flex justify-content-between align-items-flex-start">
-        <?= $custom ?>
+        <div>
+          <?= $custom ?>
+        </div>
+        <img src="./img/<?= $language ?>.svg" alt="<?= $language ?>">
         <div>
         </div>
       </div>
